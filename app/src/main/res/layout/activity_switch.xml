@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.HomeActivity">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_unit"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="Total Units:-"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="10dp"
+
+            android:id="@+id/txt_rs"
+            android:layout_width="match_parent"
+            android:text="Total Payment:-"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.espressif.esptouch.android.KdGaugeView
+            android:id="@+id/speedMeter"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:maxSpeed="180"
+            app:minSpeed="0"
+            app:speed="60"
+            app:speed_limit="90"
+            app:animationTime="2000"/>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idGVcourses1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <com.espressif.esptouch.android.ImageLinearGauge
+        android:id="@+id/gauge"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        app:sv_orientation="HORIZONTAL"
+        app:sv_speedTextPosition="BOTTOM_CENTER"
+        app:sv_unitUnderSpeedText="false"
+        app:sv_speedometerBackColor="#9e9e9e"
+        app:sv_image="@drawable/fire"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/idGraphView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

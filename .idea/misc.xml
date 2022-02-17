@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SmartSwitchAndroid/app/src/main/res/layout/activity_board.xml" value="0.2421875" />
+        <entry key="..\:/SmartSwitchAndroid/app/src/main/res/layout/activity_home.xml" value="0.2421875" />
+        <entry key="..\:/esp/esp-idf/examples/ESP-POCs/SmartSwitchAndroid/app/src/main/res/layout/activity_home.xml" value="0.2421875" />
+        <entry key="..\:/esp/esp-idf/examples/ESP-POCs/SmartSwitchAndroid/app/src/main/res/layout/activity_keys_history.xml" value="0.2421875" />
+        <entry key="..\:/esp/esp-idf/examples/ESP-POCs/SmartSwitchAndroid/app/src/main/res/layout/activity_switch.xml" value="0.2421875" />
+        <entry key="..\:/esp/esp-idf/examples/ESP-POCs/SmartSwitchAndroid/app/src/main/res/layout/activity_unit_history.xml" value="0.2421875" />
+        <entry key="..\:/esp/esp-idf/examples/ESP-POCs/SmartSwitchAndroid/app/src/main/res/layout/activity_unithistory.xml" value="0.2421875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

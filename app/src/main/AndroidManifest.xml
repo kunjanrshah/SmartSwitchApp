@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.espressif.esptouch.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".EspTouchApp"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,LockedOrientationActivity">
+        <activity
+            android:name=".activities.ScheduleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.CreateGroupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SwitchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.BoardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.FloorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.EspMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".v1.EspTouchActivity"
+            android:exported="true"
+            android:label="@string/esptouch1_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".v2.EspTouch2Activity"
+            android:exported="true"
+            android:label="@string/esptouch2_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".v2.EspProvisioningActivity"
+            android:exported="true"
+            android:label="@string/esptouch2_provisioning_title"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.UnitHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+        <service
+            android:name=".mqat.NotificationService"
+            android:enabled="true" />
+    </application>
+
+</manifest>
